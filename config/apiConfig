@@ -1,0 +1,33 @@
+const serviceConstants = {
+  baseURL: {
+    dev: 'https://reqres.in/api',
+    prod: 'https://reqres.in/api/prod'
+  },
+  serviceKeys: {
+    dev: '',
+    prod: ''
+  },
+  isProdEnabled: false,
+  timeOut: 30000,
+  commonHeaders: {
+    accept: 'application/json'
+  }
+};
+
+export default {
+  user: {
+    list: {
+      endPoint: '/users',
+      method: 'GET',
+      isEnabled: true
+    },
+    signup: {
+      endPoint: '/signup',
+      method: 'POST',
+      isEnabled: false
+    }
+  },
+  feed: {}
+};
+
+export { serviceConstants };
