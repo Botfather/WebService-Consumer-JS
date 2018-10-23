@@ -73,6 +73,9 @@ body | pass JS object that has body data which needs to be sent over | `Object`
         payload: 'I'll be attached to the request!'
       }
     })
+```
+Use .then and .catch to handle returned promises!
+```javascript
       .then(obj => {
       //because everything went well... proceed!
       })
@@ -121,8 +124,8 @@ export { serviceConstants };
 
 ToDo:
 ---
-[ ] Add global logging
-[ ] Add mechanism to include service keys with the request
-[ ] A safer way to set `isProdEnabled` 
-[ ] Flexible placement of apiConfig
-[ ] Document code
+* Add global logging
+* Add mechanism to include service keys with the request
+* A safer way to set `isProdEnabled` 
+* Flexible placement of apiConfig
+* Document code
