@@ -72,7 +72,7 @@ body | pass JS object that has body data which needs to be sent over | `Object`
       body: {
         payload: 'I'll be attached to the request!'
       }
-    })
+    });
 ```
 Use .then and .catch to handle returned promises!
 ```javascript
